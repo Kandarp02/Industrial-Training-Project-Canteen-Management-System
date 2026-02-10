@@ -1,9 +1,4 @@
-# 🍽️ Canteen Management System  
-### Industrial Training Project – Desktop Application
-
-<p align="center">
-<b>Login → Select Module → Perform CRUD Operations → Manage Complete Canteen Data Digitally</b>
-</p>
+# 🍽️ Canteen Management System  (Industrial Training Project – Desktop Application)
 
 <p align="center">
 <img src="https://img.shields.io/badge/Java-Desktop%20Application-orange?style=for-the-badge&logo=java&logoColor=white"/>
@@ -34,6 +29,10 @@ The main objective of this system is to **manage all canteen-related activities 
 ---
 
 # 🔐 System Flow (Actual Working)
+
+<p align="center">
+<b>Login → Select Module → Perform CRUD Operations → Manage Complete Canteen Data Digitally</b>
+</p>
 
 ## Step 1 – Login
 
