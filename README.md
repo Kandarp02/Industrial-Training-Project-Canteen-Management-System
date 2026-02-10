@@ -175,6 +175,7 @@ All screenshots are available inside the **`screenshots/`** folder.
 <p align="center">
   <img src="screenshots/15.png" width="45%"/>
   <img src="screenshots/16.png" width="45%"/>
+  <img src="screenshots/17.png" width="45%"/>
 </p>
 
 ---
