@@ -1,141 +1,185 @@
-# 🍽️ Industrial Training Project – Canteen Management System
+# 🍽️ Canteen Management System  
+### Industrial Training Project – Desktop Application
 
 <p align="center">
-  <b>Smart • Fast • Reliable • Desktop-Based Solution</b>
+<b>Login → Select Module → Perform CRUD Operations → Manage Complete Canteen Data Digitally</b>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Java-Desktop%20Application-orange?style=for-the-badge&logo=java&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Java%20Swing-GUI-blue?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/JDBC-Database%20Connectivity-green?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/MySQL-Database-blue?style=for-the-badge&logo=mysql&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Industrial%20Training-Sumago%20Infotech-purple?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Java-Desktop%20Application-orange?style=for-the-badge&logo=java&logoColor=white"/>
+<img src="https://img.shields.io/badge/Java%20Swing-GUI-blue?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/JDBC-Database%20Connectivity-green?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/MySQL-Database-blue?style=for-the-badge&logo=mysql&logoColor=white"/>
+<img src="https://img.shields.io/badge/Industrial%20Training-Sumago%20Infotech-purple?style=for-the-badge"/>
 </p>
 
 ---
 
-## 📌 Project Description
+# 📌 Project Overview
 
-The **Canteen Management System** is a Java-based desktop application developed during my **Industrial Training at Sumago Infotech Pvt. Ltd., Nashik**.  
-The system automates canteen operations such as item management, billing, order handling, and record maintenance using a structured and user-friendly desktop interface.
+The **Canteen Management System** is a **Java-based desktop application** developed during my **Industrial Training at Sumago Infotech Pvt. Ltd., Nashik**.
 
----
-
-## 🎯 Objectives
-
-- Automate manual canteen processes  
-- Reduce calculation and billing errors  
-- Maintain accurate item and order records  
-- Improve speed and efficiency of operations  
-- Provide a simple system usable by non-technical staff  
+The main objective of this system is to **manage all canteen-related activities digitally** by maintaining structured records and allowing the admin to perform operations on Students, Packages, and Products through a simple graphical interface.
 
 ---
 
-## ❌ Existing System Problems
+# 🎯 System Objective
 
-- Manual record keeping using registers  
-- Time-consuming billing process  
-- High chance of calculation errors  
-- No proper stock or sales tracking  
-- Risk of data loss or mismanagement  
-
----
-
-## ✅ Proposed System Solution
-
-The proposed system is a **desktop-based automated solution** that:
-- Uses Java Swing for graphical interface  
-- Stores all data securely in a MySQL database  
-- Performs automatic bill calculation  
-- Maintains organized digital records  
-- Reduces workload and improves accuracy  
+- Replace manual register-based management  
+- Maintain organized digital records  
+- Reduce billing and data errors  
+- Improve speed and efficiency  
+- Provide easy-to-use software for canteen authority  
 
 ---
 
-## 🚀 Key Features
+# 🔐 System Flow (Actual Working)
 
-### 🔐 Authentication
-- Secure admin login system
+## Step 1 – Login
 
-### 📦 Item Management
-- Add, update, and delete food items
-- Manage item prices and availability
-
-### 🧾 Billing System
-- Automatic bill generation
-- Accurate calculation without manual effort
-
-### 🗂️ Record Management
-- Store and retrieve data from database
-- Organized order and billing records
-
-### 💡 User-Friendly UI
-- Simple and intuitive desktop interface
-- Easy navigation for canteen staff
+- User enters **username and password**
+- Credentials are verified with database
+- If correct → Access granted
+- If incorrect →  
+  - *Invalid Details* message  
+  - *Please fill required details* popup
 
 ---
 
-## 🧠 Unique Highlights
+## Step 2 – Module Selection
 
-- Desktop-based Java application  
-- Built using real industry workflow  
-- JDBC-based database connectivity  
-- Modular and scalable design  
-- Developed following SDLC methodology  
+After login, user can select any of the following modules:
+
+1. **Student Registration**
+2. **Packages**
+3. **Product**
+
+Each module opens its dedicated management screen.
 
 ---
 
-## 🛠️ Technologies Used
+# 🧩 Core Functionality – CRUD Operations
 
-### Programming & UI
+Every module supports full **CRUD Operations**:
+
+- **Add**
+- **Delete**
+- **Update**
+- **View**
+
+---
+
+# Module 1 – Student Registration
+
+### Operations Available
+
+**Add Student**
+- Enter student details
+- Option to select package
+- Package assigned using ID
+
+**Delete Student**
+- Enter Student ID
+- If found → Record deleted
+- Else → “Student Record Not Found”
+
+**Update Student**
+- Enter Student ID
+- Select field to update  
+  (Name, Email, DOB, Mobile etc.)
+- Input type validation performed
+
+**View Student**
+- Display all records in table
+- Clear data option available
+
+---
+
+# Module 2 – Package Management
+
+### Operations Available
+
+**Add Package**
+- Enter package details
+
+**Delete Package**
+- Delete using Package ID
+- Validation for incorrect ID
+
+**Update Package**
+- Modify cost, items, etc.
+- Input validation performed
+
+**View Package**
+- Display all package records
+
+---
+
+# Module 3 – Product Management
+
+### Operations Available
+
+**Add Product**
+- Enter product details
+
+**Delete Product**
+- Delete using Product ID
+
+**Update Product**
+- Modify name, cost, ID etc.
+- Numeric and string validation
+
+**View Product**
+- Display all product records
+
+---
+
+# Smart System Validations
+
+- Input type checking
+- Required field validation
+- Pop-up error messages
+- Database existence checking
+
+---
+
+# 🛠️ Technologies Used
+
+## Programming
+
 - Java  
+- Advanced Java  
+
+## GUI Development
+
 - Java Swing  
 - AWT  
 
-### Backend & Database
-- JDBC (Java Database Connectivity)  
+## Database
+
 - MySQL  
 
-### Tools & Environment
+## Connectivity
+
+- JDBC (Java Database Connectivity)
+
+## Development Tools
+
 - NetBeans / Eclipse IDE  
 - MySQL Server / XAMPP  
 
 ---
 
-## 🧩 System Modules
+# Database Design
 
-1. Login Module  
-2. Admin Management Module  
-3. Item Management Module  
-4. Billing Module  
-5. Database Management Module  
+The system uses a **Relational Database Model**.
 
----
+### Main Tables
 
-## 🔄 System Flow
-
-1. Admin logs into the system  
-2. Items are added or updated  
-3. Customer order is selected  
-4. Bill is calculated automatically  
-5. Order details are stored in database  
-
----
-
-## 🗄️ Database Design
-
-The database is designed using an **Entity Relationship (ER) Model**.
-
-### Major Entities
-- Admin  
-- Items  
-- Orders  
-- Bill  
-
-### Relationships
-- Admin manages items  
-- Orders include multiple items  
-- Bills are generated per order  
+- Student
+- Package
+- Product
+- Admin Login
 
 ---
 
@@ -180,72 +224,61 @@ All screenshots are available inside the **`screenshots/`** folder.
 
 ---
 
-## 📂 Project Structure
+# Installation Steps
 
-Industrial-Training-Project-Canteen-Management-System
-
-│
-
-├── src/
-
-├── screenshots/
-
-├── Industrial_Training_Report.pdf
-
-├── README.md
-
-
----
-
-## ⚙️ Installation & Execution Steps
-
-1. Install Java (JDK 8 or above)  
-2. Install MySQL Server  
-3. Import database (if provided)  
-4. Open project in NetBeans or Eclipse  
+1. Install Java JDK  
+2. Install MySQL  
+3. Import database  
+4. Open project in NetBeans/Eclipse  
 5. Configure JDBC connection  
-6. Run the main Java file  
+6. Run main file
 
 ---
 
-## 📈 Learning Outcomes
+# Learning Outcomes from Industrial Training
 
-- Real-world software development exposure  
-- Desktop application design using Java Swing  
+- Real-world software development lifecycle  
+- Desktop application architecture  
 - Database connectivity using JDBC  
-- ER diagram and database design  
-- Professional documentation and reporting  
-- Improved problem-solving and debugging skills  
+- Input validation and error handling  
+- Client requirement understanding  
+- Professional documentation practices  
 
 ---
 
-## 🌱 Future Enhancements
+# Challenges Faced
 
-- Role-based access (Admin / Staff)  
-- Sales and revenue reports  
-- Inventory management  
-- Receipt printing  
-- Cloud database integration  
-
----
-
-## 📄 Documentation
-
-- Industrial Training Report (PDF included)  
-- Screenshots for reference  
+- Learning multiple technologies in limited time  
+- Adapting to industry workflow  
+- Handling database connectivity issues  
+- Understanding client requirements
 
 ---
 
-## 👨‍💻 Author
+# Future Enhancements
+
+- Role-based login (Admin / Staff)
+- Sales and report generation
+- Inventory management
+- Receipt printing
+- Cloud database integration
+
+---
+
+# Documentation
+
+Industrial Training Report is included for reference.
+
+---
+
+# Author
 
 **Kandarp Subhash Patil**  
 Diploma in Computer Engineering  
-Industrial Training – Sumago Infotech Pvt. Ltd., Nashik  
+Industrial Training – Sumago Infotech Pvt. Ltd., Nashik
 
 ---
 
 <p align="center">
   <b>“Transforming Manual Canteen Operations into Smart Digital Systems”</b>
 </p>
-
-
